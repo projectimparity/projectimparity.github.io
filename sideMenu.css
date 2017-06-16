@@ -1,0 +1,9 @@
+#sideMenu{
+  position: absolute;
+  background-color: #ffd3d0;
+  height: 100%;
+  width: 50%;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Around the World in Ice Cream</title>
+	<link rel="stylesheet" type="text/css" href="main.css" />
+	<link rel="stylesheet" type="text/css" href="map.css" />
+	<link rel="stylesheet" type="text/css" href="sideMenu.css" />
+	<link rel="stylesheet" type="text/css" href="queries.css" />
+	<script src = "script.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+
+	<link rel="icon" type="img/ico" href="images/logoBlackFilled.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+        <div id = "top">
+                <!--Menu for now-->
+                <div id = "topLogoDiv">
+                        <img id = "topLogo" src = "images/menuButton.png">
+                </div>
+
+                <div id = "topTitleDiv">
+                        <h1 id = "topTitle">Around the World in Ice Cream</h1>
+                </div>
+
+                <div id = "topSearchDiv">
+                        <!--Search-->
+                <script>
+                  (function() {
+                    var cx = '002457898823174146598:b4zlopgxsqk';
+                    var gcse = document.createElement('script');
+                    gcse.setAttribute("id","search-bar");
+;                       gcse.type = 'text/javascript';
+                    gcse.async = true;
+                    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(gcse, s);
+                  })();
+                </script>
+                <gcse:search></gcse:search>
+                </div>
+        </div>
+
+        <div id = "sideMenu">
+
+        </div>
+
+        <div id = "main">
+					<div id="map"></div>
+    				<script>
+      				function initMap() {
+        				var uluru = {lat: -25.363, lng: 131.044};
+        				var map = new google.maps.Map(document.getElementById('map'), {
+          				zoom: 4,
+          				center: uluru
+        				});
+        				var marker = new google.maps.Marker({
+          				position: uluru,
+          				map: map
+        				});
+      				}
+    				</script>
+    				<script async defer
+    					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSLVXO5UGXgvZXc0tiQHMzmZ7cROX_-u0&callback=initMap">
+    				</script>
+        </div>
+
+</body>
+</html>
