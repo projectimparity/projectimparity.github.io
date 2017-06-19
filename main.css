@@ -103,7 +103,7 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
 
 #sideBar{
   position: absolute;
-  width: 320px;
+  width: 350px;
   height: 100%;
   background-color: white;
   bottom: 0;
@@ -115,16 +115,89 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
 #sideBarHeader{
   position: absolute;
   width: 100%;
-  height: 300px;
+  height:  290px;
   background-color: #fced1c;
+}
+
+#zipCodeDiv{
+  position: absolute;
+  margin-top: 210px;
+  margin-left: 40px;
+}
+
+#zipCode{
+  color: black;
+  font-size: 34px;
+  font-weight: normal;
 }
 
 #sideBarContent{
   position: absolute;
+  text-align: center;
   width: 100%;
   height: calc(100% - 300px);
-  margin-top: 300px;
+  margin-top: 320px;
   background-color: white;
+}
+
+#sideBarText1Div{
+
+}
+
+#sideBarText1, #sideBarText2{
+  color: black;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+#sideBarPercentDiv{
+
+}
+
+#sideBarPercent{
+  color: black;
+  font-size: 72px;
+  font-weight: normal;
+}
+
+#sideBarText2Div{
+  margin-top: -50px;
+}
+
+#sideBarText2{
+
+}
+
+#sideBarHR{
+  background-color: black;
+  width: 100px;
+  height: 1px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+#optionsBarDiv{
+  width: 100%;
+  height: 200px;
+  margin-top: 50px;
+}
+
+.options{
+  display: inline-block;
+  width: 100px;
+  height: 100%;
+}
+
+.optionsIcon{
+  height: 45px;
+  width: auto;
+}
+
+.optionsText{
+  color: black;
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 15px;
 }
 
 #legend{
@@ -136,5 +209,37 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
   right: 10px;
   z-index: 9;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
 
+#legendTitle{
+  color: black;
+  font-weight: normal;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#legendTable{
+
+}
+
+.legendRow{
+  width: 200px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+.legendSquare, .legendSubject{
+  display: inline-block;
+}
+
+.legendSquare{
+  background-color: purple;
+  width: 45px;
+  height: 45px;
+}
+
+.legendSubject{
+  width: 120px;
+  margin-left: 5px;
 }
