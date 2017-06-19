@@ -10,8 +10,13 @@
 
   <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
 
-	<link rel="icon" type="img/ico" href="images/logoBlackFilled.png">
+	<link rel="icon" type="img/ico" href="images/logo-dark.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>
+		var query = new google.visualization.Query(DATA_SOURCE_URL);
+		query.setQuery('select dept, sum(salary) group by dept');
+		query.send(handleQueryResponse);
+	</script>
 </head>
 
 <body>
@@ -19,11 +24,11 @@
         <div id = "top">
                 <!--Menu for now-->
                 <div id = "topLogoDiv">
-                        <img id = "topLogo" src = "images/menuButton.png">
+                        <img id = "topLogo" src = "images/logo-light.png">
                 </div>
 
                 <div id = "topTitleDiv">
-                        <h1 id = "topTitle">Around the World in Ice Cream</h1>
+                        <h1 id = "topTitle">Project Imparity</h1>
                 </div>
 
                 <div id = "topSearchDiv">
@@ -44,11 +49,19 @@
                 </div>
         </div>
 
-        <div id = "sideMenu">
+        <div id = "sideBar">
+					<div id = "sideBarHeader">
+					</div>
 
+					<div id = "sideBarContent">
+					</div>
         </div>
 
         <div id = "main">
+
+					<div id = "legend">
+					</div>
+
 					<div id="map"></div>
     				<script>
       				function initMap() {
