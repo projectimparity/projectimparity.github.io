@@ -57,7 +57,7 @@
 #topSearchDiv{
         width: 500px;
         margin-left: calc(100% - 510px);
-        margin-top: 10px;
+        margin-top: 30px;
 }
 
 .cse .gsc-search-button input.gsc-input, input.gsc-input{
@@ -162,7 +162,7 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
 }
 
 #sideBarText2Div{
-  margin-top: -50px;
+  margin-top: -20px;
 }
 
 #sideBarText2{
