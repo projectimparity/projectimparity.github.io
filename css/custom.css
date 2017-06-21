@@ -5,9 +5,9 @@ a:hover { color: #4B58A6; }
   max-width: none;
 }
 
-.filter-box { 
-  height: 15px; 
-  width: 15px;  
+.filter-box {
+  height: 15px;
+  width: 15px;
   display: inline-block;
   *border-right-width: 2px;
   *border-bottom-width: 2px;
@@ -16,7 +16,7 @@ a:hover { color: #4B58A6; }
           border-radius: 5px;
   -webkit-background-clip: padding-box;
      -moz-background-clip: padding;
-          background-clip: padding-box; 
+          background-clip: padding-box;
 }
 
 .filter-yellow { background-color: #FBF358; }
@@ -28,6 +28,6 @@ a:hover { color: #4B58A6; }
 canvas {-ms-touch-action: double-tap-zoom;}
 
 /* customizations for iframe template */
-.iframe #map_canvas { height: 500px; }
+.iframe #map_canvas { height: 100%; }
 .iframe .well { margin-bottom: 5px; }
 .iframe .alert { margin-top: 5px; }
