@@ -6,12 +6,21 @@
 	<link rel="stylesheet" href="css/bootstrap.iframe.css"/>
 	<link rel="stylesheet" href="css/custom.css"/>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
-
+	<script src = "js/dummy.js"></script>
 	<link rel="icon" type="img/ico" href="images/logo-dark.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
+				<div id = "districtMapDiv" onclick = "closeDistrictMap()">
+					<div id = "districtMapContent">
+						<div id = "exitButtonDiv">
+							<img id = "exitButton" src = "images/exitButtonDark.png">
+						</div>
+						<iframe id = "districtMap" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col10+from+1o_NBmKAHnbtyUqOWsQselwKFRxmiaQ_PJmkdQdU2&amp;viz=MAP&amp;h=false&amp;lat=30.3025481641255&amp;lng=-97.75048046044917&amp;t=1&amp;z=11&amp;l=col10&amp;y=2&amp;tmplt=2&amp;hml=KML"></iframe>
+					</div>
+				</div>
+
 
         <div id = "top">
                 <!--Menu for now-->
@@ -94,9 +103,9 @@
 								<h1 class = "optionsText">AFFORDABLE HOUSING</h1>
 							</div>
 
-							<div id = "callOptionDiv" class = "options">
+							<div id = "callOptionDiv" class = "options" onclick = "openDistrictMap()">
 								<img src = "images/call.png" class = "optionsIcon"/>
-								<h1 class = "optionsText">CALL LOCAL REPRESENTATIVE</h1>
+								<h1 class = "optionsText">CONTACT LOCAL REPRESENTATIVE</h1>
 							</div>
 
 							<div id = "meetingOptionDiv" class = "options">
@@ -129,7 +138,7 @@
 
 							<div class = "legendRow">
 								<div class = "legendSquare" style = "background-color: #679c4a"></div>
-								<div class = "legendSubject">0-40%</div>
+								<div class = "legendSubject"><40%</div>
 							</div>
 
 							<div class = "legendRow">
