@@ -257,3 +257,19 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
   width: 100%;
   height: 100%;
 }
+
+#districtMapDiv{
+  position: fixed;
+  z-index: 22;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+#districtMap{
+  position: absolute;
+  height: 600;
+  width: 600;
+  margin-top: 100px;
+  margin-left: 450px;
+}
