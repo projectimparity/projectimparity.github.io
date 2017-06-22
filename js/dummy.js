@@ -76,3 +76,9 @@ $(function() {
       }
   });
 });
+
+//SIDE BAR
+function changeSideBar(){
+  document.getElementById('zipCode').innerHTML = 'Some Zip Code';
+  document.getElementById('sideBarPercent').innerHTML = '12' + "%";
+}
