@@ -189,6 +189,10 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
   height: 100%;
 }
 
+.options:hover{
+  cursor: pointer;
+}
+
 .optionsIcon{
   height: 45px;
   width: auto;
