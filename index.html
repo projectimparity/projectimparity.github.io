@@ -12,16 +12,6 @@
 </head>
 
 <body>
-				<div id = "districtMapDiv" onclick = "closeDistrictMap()">
-					<div id = "districtMapContent">
-						<div id = "exitButtonDiv">
-							<img id = "exitButton" src = "images/exitButtonDark.png">
-						</div>
-						<iframe id = "districtMap" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col10+from+1o_NBmKAHnbtyUqOWsQselwKFRxmiaQ_PJmkdQdU2&amp;viz=MAP&amp;h=false&amp;lat=30.3025481641255&amp;lng=-97.75048046044917&amp;t=1&amp;z=11&amp;l=col10&amp;y=2&amp;tmplt=2&amp;hml=KML"></iframe>
-					</div>
-				</div>
-
-
         <div id = "top">
                 <!--Menu for now-->
                 <div id = "topLogoDiv">
@@ -103,7 +93,7 @@
 								<h1 class = "optionsText">AFFORDABLE HOUSING</h1>
 							</div>
 
-							<div id = "callOptionDiv" class = "options" onclick = "openDistrictMap()">
+							<div id = "callOptionDiv" class = "options" onclick = "changeMap()">
 								<img src = "images/call.png" class = "optionsIcon"/>
 								<h1 class = "optionsText">CONTACT LOCAL REPRESENTATIVE</h1>
 							</div>
@@ -166,55 +156,9 @@
 			    <script type="text/javascript" src="js/jquery.address.js"></script>
 			    <script type="text/javascript" src="https://maps.google.com/maps/api/js?libraries=places&key=AIzaSyAWnB_I7OITzZAyCWNQEAOQaQ1TREUUXEk"></script>
 			    <script type="text/javascript" src="js/maps_lib.js"></script>
-			    <script type='text/javascript'>
+			    <script type='text/javascript' src = "js/dummy.js">
 			      //<![CDATA[
-			        $(function() {
 
-			          var myMap = new MapsLib({
-			            fusionTableId:      "1CQYIqVOK-A1Ho-cYv9wl3p4XTfrJKcIOM0GehOHG",
-			            googleApiKey:       "AIzaSyAWnB_I7OITzZAyCWNQEAOQaQ1TREUUXEk",
-			            locationColumn:     "geometry",
-			            map_center:         [30.2672, -97.7431],
-			            locationScope:      "austin"
-			          });
-
-
-			          var autocomplete = new google.maps.places.Autocomplete(document.getElementById('search_address'));
-
-			          $(':checkbox').click(function(){
-			            myMap.doSearch();
-			          });
-
-			          $(':radio').click(function(){
-			            myMap.doSearch();
-			          });
-
-			          $('#search_radius').change(function(){
-			            myMap.doSearch();
-			          });
-
-			          $('#search').click(function(){
-			            myMap.doSearch();
-			          });
-
-			          $('#find_me').click(function(){
-			            myMap.findMe();
-			            return false;
-			          });
-
-			          $('#reset').click(function(){
-			            myMap.reset();
-			            return false;
-			          });
-
-			          $(":text").keydown(function(e){
-			              var key =  e.keyCode ? e.keyCode : e.which;
-			              if(key === 13) {
-			                  $('#search').click();
-			                  return false;
-			              }
-			          });
-			        });
 			      //]]>
 			    </script>
 </div>
