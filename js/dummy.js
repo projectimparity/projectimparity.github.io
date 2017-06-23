@@ -30,6 +30,9 @@ function showDistricts(){
       map_center:         [30.2672, -97.7431],
       locationScope:      "austin"
     });
+
+    document.getElementById("legend").style.display = "none";
+
   } else{
     myMap = new MapsLib({
       fusionTableId:      "1CQYIqVOK-A1Ho-cYv9wl3p4XTfrJKcIOM0GehOHG",
@@ -38,7 +41,11 @@ function showDistricts(){
       map_center:         [30.2672, -97.7431],
       locationScope:      "austin"
     });
+
+    document.getElementById("legend").style.display = "block";
   }
+
+
 }
 
 var countAffordable = 0;
@@ -54,6 +61,7 @@ function showAffordableHousing(){
       map_center:         [30.2672, -97.7431],
       locationScope:      "austin"
     });
+    document.getElementById("legend").style.display = "none";
   } else{
     myMap = new MapsLib({
       fusionTableId:      "1CQYIqVOK-A1Ho-cYv9wl3p4XTfrJKcIOM0GehOHG",
@@ -62,6 +70,7 @@ function showAffordableHousing(){
       map_center:         [30.2672, -97.7431],
       locationScope:      "austin"
     });
+    document.getElementById("legend").style.display = "block";
   }
 }
 
