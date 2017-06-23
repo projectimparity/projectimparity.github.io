@@ -74,6 +74,20 @@ function showAffordableHousing(){
   }
 }
 
+var countCal = 0;
+
+function showCalendar(){
+  countCal++;
+  var cal = document.getElementById("calendarDiv");
+  if(countCal%2 === 1){
+    cal.style.display = "block";
+    document.getElementById("sideBar").style.height = "180%";
+  } else{
+    cal.style.display = "none";
+    document.getElementById("sideBar").style.height = "auto";
+  }
+}
+
 $(function() {
   var autocomplete = new google.maps.places.Autocomplete(document.getElementById('search_address'));
 
@@ -114,8 +128,13 @@ $(function() {
 
 //SIDE BAR
 function changeSideBar(){
-
-  document.getElementById('zipCode').innerHTML = 'Some Zip Code';
+  var zipCode = document.getElementsByTagName("li")[1];
+  document.getElementById('zipCode').innerHTML = zipCode;
   document.getElementById('sideBarPercent').innerHTML = '12' + "%";
-
 }
+/*
+function dummy(){
+  var zipCode = document.getElementsByTagName("b")[0];
+  document.getElementById('zipCode').innerHTML = zipCode;
+  document.getElementById('sideBarPercent').innerHTML = '12' + "%";
+} */
