@@ -7,20 +7,13 @@ function closeDistrictMap(){
 }
 
 //FOR MAP
-var myMap = new MapsLib({
-  fusionTableId:      "1CQYIqVOK-A1Ho-cYv9wl3p4XTfrJKcIOM0GehOHG",
-  googleApiKey:       "AIzaSyAWnB_I7OITzZAyCWNQEAOQaQ1TREUUXEk",
-  locationColumn:     "geometry",
-  map_center:         [30.2672, -97.7431],
-  locationScope:      "austin"
-});
 
-var count = 0;
+var countDistrict = 0;
 
-function changeMap(){
-  count++;
+function showDistricts(){
+  countDistrict++;
 
-  if(count%2 === 1){
+  if(countDistrict%2 === 1){
     myMap= new MapsLib({
       fusionTableId:      "1o_NBmKAHnbtyUqOWsQselwKFRxmiaQ_PJmkdQdU2",
       googleApiKey:       "AIzaSyAWnB_I7OITzZAyCWNQEAOQaQ1TREUUXEk",
@@ -39,6 +32,31 @@ function changeMap(){
   }
 }
 
+var countAffordable = 0;
+
+function showAffordableHousing(){
+  countAffordable++;
+
+  if(countAffordable%2 === 1){
+    myMap= new MapsLib({
+      fusionTableId:      "1rT5PH2EnnmXf5VMdkLW5SD141MQP6tZToAZ9612Y",
+      googleApiKey:       "AIzaSyAWnB_I7OITzZAyCWNQEAOQaQ1TREUUXEk",
+      locationColumn:     "geometry",
+      map_center:         [30.2672, -97.7431],
+      locationScope:      "austin"
+    });
+  } else{
+    myMap = new MapsLib({
+      fusionTableId:      "1CQYIqVOK-A1Ho-cYv9wl3p4XTfrJKcIOM0GehOHG",
+      googleApiKey:       "AIzaSyAWnB_I7OITzZAyCWNQEAOQaQ1TREUUXEk",
+      locationColumn:     "geometry",
+      map_center:         [30.2672, -97.7431],
+      locationScope:      "austin"
+    });
+  }
+}
+
+//MAP SEARCH
 $(function() {
   var autocomplete = new google.maps.places.Autocomplete(document.getElementById('search_address'));
 
@@ -79,6 +97,8 @@ $(function() {
 
 //SIDE BAR
 function changeSideBar(){
+
   document.getElementById('zipCode').innerHTML = 'Some Zip Code';
   document.getElementById('sideBarPercent').innerHTML = '12' + "%";
+
 }
