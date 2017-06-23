@@ -104,7 +104,7 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
 #sideBar{
   position: absolute;
   width: 350px;
-  height: 150%;
+  height: auto%;
   background-color: white;
   bottom: 0;
   left: 0;
@@ -205,6 +205,40 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
   margin-top: 15px;
 }
 
+#calendarDiv{
+  background-color: white;
+  width: 80%;
+  height: 600px;
+  margin-left: 30px;
+  margin-top: -70px;
+  display: none;
+}
+
+#calendarTitleDiv{
+  position: absolute;
+  height: 55px;
+  width: 80%;
+  background-color: #5e35b1;
+  text-align: left;
+}
+
+#calendarTitle{
+  color: white;
+  font-size: 20px;
+  font-weight: lighter;
+  margin-left: 10px;
+}
+
+#calendar{
+  position: absolute;
+  height: 600px;
+  width: 80%;
+  margin-left: -140px;
+  margin-top: 60px;
+}
+
+
+/*LEGEND*/
 #legend{
   position: fixed;
   width: 200px;
