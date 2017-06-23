@@ -7,7 +7,7 @@ function closeDistrictMap(){
 }
 
 //FOR MAP
-funtion loadMap(){
+function loadMap(){
   var myMap = new MapsLib({
     fusionTableId:      "1CQYIqVOK-A1Ho-cYv9wl3p4XTfrJKcIOM0GehOHG",
     googleApiKey:       "AIzaSyAWnB_I7OITzZAyCWNQEAOQaQ1TREUUXEk",
