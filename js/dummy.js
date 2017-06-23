@@ -7,6 +7,13 @@ function closeDistrictMap(){
 }
 
 //FOR MAP
+var myMap = new MapsLib({
+  fusionTableId:      "1CQYIqVOK-A1Ho-cYv9wl3p4XTfrJKcIOM0GehOHG",
+  googleApiKey:       "AIzaSyAWnB_I7OITzZAyCWNQEAOQaQ1TREUUXEk",
+  locationColumn:     "geometry",
+  map_center:         [30.2672, -97.7431],
+  locationScope:      "austin"
+});
 
 var countDistrict = 0;
 
