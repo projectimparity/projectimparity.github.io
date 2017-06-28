@@ -1,13 +1,24 @@
 //FOR MAP
+var myMap = new MapsLib({
+  fusionTableId:      "1EHig2fLqGlw_259sUar_n8BKrn5-l5NL-oNzpNkE",
+  googleApiKey:       "AIzaSyAWnB_I7OITzZAyCWNQEAOQaQ1TREUUXEk",
+  locationColumn:     "geometry",
+  map_center:         [30.2672, -97.7431],
+  locationScope:      "austin"
+});
 
 function loadMap(){
-  var myMap = new MapsLib({
+  myMap = new MapsLib({
     fusionTableId:      "1EHig2fLqGlw_259sUar_n8BKrn5-l5NL-oNzpNkE",
     googleApiKey:       "AIzaSyAWnB_I7OITzZAyCWNQEAOQaQ1TREUUXEk",
     locationColumn:     "geometry",
     map_center:         [30.2672, -97.7431],
     locationScope:      "austin"
   });
+}
+
+function loadSearchMap(){
+  myMap.doSearch();
 }
 
 var countDistrict = 0;
