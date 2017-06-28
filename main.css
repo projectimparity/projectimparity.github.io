@@ -258,6 +258,10 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
   margin-left: 10px;
 }
 
+#legendSource{
+  text-decoration: underline;
+}
+
 #legendTable{
 
 }
