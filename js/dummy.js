@@ -1,16 +1,8 @@
-function openDistrictMap(){
-    document.getElementById("districtMapDiv").style.display = "inline";
-}
-
-function closeDistrictMap(){
-  document.getElementById("districtMapDiv").style.display = "none";
-}
-
 //FOR MAP
 
 function loadMap(){
   var myMap = new MapsLib({
-    fusionTableId:      "101jSo8YC3qo5qZ-AbAoDWb6NSVp0Zr1tGgNhuxI0",
+    fusionTableId:      "1EHig2fLqGlw_259sUar_n8BKrn5-l5NL-oNzpNkE",
     googleApiKey:       "AIzaSyAWnB_I7OITzZAyCWNQEAOQaQ1TREUUXEk",
     locationColumn:     "geometry",
     map_center:         [30.2672, -97.7431],
@@ -31,18 +23,18 @@ function showDistricts(){
       map_center:         [30.2672, -97.7431],
       locationScope:      "austin"
     });
-
+    //document.getElementById("locateOptionDiv").style.background-color = "#fced1c";
     document.getElementById("legend").style.display = "none";
 
   } else{
     myMap = new MapsLib({
-      fusionTableId:      "101jSo8YC3qo5qZ-AbAoDWb6NSVp0Zr1tGgNhuxI0",
+      fusionTableId:      "1EHig2fLqGlw_259sUar_n8BKrn5-l5NL-oNzpNkE",
       googleApiKey:       "AIzaSyAWnB_I7OITzZAyCWNQEAOQaQ1TREUUXEk",
       locationColumn:     "geometry",
       map_center:         [30.2672, -97.7431],
       locationScope:      "austin"
     });
-
+    //document.getElementById("locateOptionDiv").style.background-color = "white";
     document.getElementById("legend").style.display = "block";
   }
 
@@ -63,14 +55,16 @@ function showAffordableHousing(){
       locationScope:      "austin"
     });
     document.getElementById("legend").style.display = "none";
+    //document.getElementById("callOptionDiv").style.background-color = "#fced1c";
   } else{
     myMap = new MapsLib({
-      fusionTableId:      "101jSo8YC3qo5qZ-AbAoDWb6NSVp0Zr1tGgNhuxI0",
+      fusionTableId:      "1EHig2fLqGlw_259sUar_n8BKrn5-l5NL-oNzpNkE",
       googleApiKey:       "AIzaSyAWnB_I7OITzZAyCWNQEAOQaQ1TREUUXEk",
       locationColumn:     "geometry",
       map_center:         [30.2672, -97.7431],
       locationScope:      "austin"
     });
+    //document.getElementById("callOptionDiv").style.background-color = "white";
     document.getElementById("legend").style.display = "block";
   }
 }
@@ -83,8 +77,10 @@ function showCalendar(){
   if(countCal%2 === 1){
     cal.style.display = "block";
     document.getElementById("sideBar").style.height = "180%";
+    //document.getElementById("meetingOptionDiv").style.background-color = "#fced1c";
   } else{
     cal.style.display = "none";
+    //document.getElementById("meetingOptionDiv").style.background-color = "white";
     document.getElementById("sideBar").style.height = "auto";
   }
 }
@@ -128,20 +124,11 @@ $(function() {
 });
 
 //SIDE BAR
-function changeSideBar(){
-  var zipCode = document.getElementsByTagName("li")[1];
-  document.getElementById('zipCode').innerHTML = zipCode;
-  document.getElementById('sideBarPercent').innerHTML = '12' + "%";
-}
-
-/*function dummy(){
-  var zipCode = document.getElementsByTagName("b")[0];
-  document.getElementById('zipCode').innerHTML = zipCode;
-  document.getElementById('sideBarPercent').innerHTML = '12' + "%";
-} */
 
 function showInfo(){
     setTimeout(function(){
-        document.getElementById("infoWindowDiv").innerHTML = document.getElementsByClassName("googft-info-window")[0].innerHTML;
+        document.getElementById("sideBarInfoDiv").innerHTML = document.getElementsByClassName("googft-info-window")[0].innerHTML;
+        document.getElementById("zipCodeDiv").innerHTML = document.getElementsByTagName("center")[0].innerHTML;
+        //document.getElementById("sideBarPercentDiv").innerHTML = document.getElementsByClassName("googft-info-window")[0].innerHTML;
     }, 700);
 }
