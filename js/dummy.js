@@ -7,6 +7,7 @@ function closeDistrictMap(){
 }
 
 //FOR MAP
+
 function loadMap(){
   var myMap = new MapsLib({
     fusionTableId:      "101jSo8YC3qo5qZ-AbAoDWb6NSVp0Zr1tGgNhuxI0",
@@ -132,9 +133,15 @@ function changeSideBar(){
   document.getElementById('zipCode').innerHTML = zipCode;
   document.getElementById('sideBarPercent').innerHTML = '12' + "%";
 }
-/*
-function dummy(){
+
+/*function dummy(){
   var zipCode = document.getElementsByTagName("b")[0];
   document.getElementById('zipCode').innerHTML = zipCode;
   document.getElementById('sideBarPercent').innerHTML = '12' + "%";
 } */
+
+function showInfo(){
+    setTimeout(function(){
+        document.getElementById("infoWindowDiv").innerHTML = document.getElementsByClassName("googft-info-window")[0].innerHTML;
+    }, 700);
+}
