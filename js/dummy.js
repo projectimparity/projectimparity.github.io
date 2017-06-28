@@ -34,7 +34,10 @@ function showDistricts(){
       map_center:         [30.2672, -97.7431],
       locationScope:      "austin"
     });
-    //document.getElementById("locateOptionDiv").style.background-color = "#fced1c";
+    document.getElementById("callOptionDiv").style.background = "#fced1c";
+    document.getElementById("locateOptionDiv").style.background = "white";
+    document.getElementById("meetingOptionDiv").style.background = "white";
+    document.getElementById("calendarDiv").style.display = "none";
     document.getElementById("legend").style.display = "none";
 
   } else{
@@ -45,7 +48,7 @@ function showDistricts(){
       map_center:         [30.2672, -97.7431],
       locationScope:      "austin"
     });
-    //document.getElementById("locateOptionDiv").style.background-color = "white";
+    document.getElementById("callOptionDiv").style.background = "white";
     document.getElementById("legend").style.display = "block";
   }
 
@@ -66,7 +69,10 @@ function showAffordableHousing(){
       locationScope:      "austin"
     });
     document.getElementById("legend").style.display = "none";
-    //document.getElementById("callOptionDiv").style.background-color = "#fced1c";
+    document.getElementById("locateOptionDiv").style.background = "#fced1c";
+    document.getElementById("callOptionDiv").style.background = "white";
+    document.getElementById("meetingOptionDiv").style.background = "white";
+    document.getElementById("calendarDiv").style.display = "none";
   } else{
     myMap = new MapsLib({
       fusionTableId:      "1EHig2fLqGlw_259sUar_n8BKrn5-l5NL-oNzpNkE",
@@ -75,7 +81,7 @@ function showAffordableHousing(){
       map_center:         [30.2672, -97.7431],
       locationScope:      "austin"
     });
-    //document.getElementById("callOptionDiv").style.background-color = "white";
+    document.getElementById("locateOptionDiv").style.background = "white";
     document.getElementById("legend").style.display = "block";
   }
 }
@@ -88,10 +94,12 @@ function showCalendar(){
   if(countCal%2 === 1){
     cal.style.display = "block";
     document.getElementById("sideBar").style.height = "180%";
-    //document.getElementById("meetingOptionDiv").style.background-color = "#fced1c";
+    document.getElementById("meetingOptionDiv").style.background = "#fced1c";
+    document.getElementById("locateOptionDiv").style.background = "white";
+    document.getElementById("callOptionDiv").style.background = "white";
   } else{
     cal.style.display = "none";
-    //document.getElementById("meetingOptionDiv").style.background-color = "white";
+    document.getElementById("meetingOptionDiv").style.background = "white";
     document.getElementById("sideBar").style.height = "auto";
   }
 }
