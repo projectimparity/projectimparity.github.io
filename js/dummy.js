@@ -9,7 +9,7 @@ function closeDistrictMap(){
 //FOR MAP
 function loadMap(){
   var myMap = new MapsLib({
-    fusionTableId:      "1CQYIqVOK-A1Ho-cYv9wl3p4XTfrJKcIOM0GehOHG",
+    fusionTableId:      "101jSo8YC3qo5qZ-AbAoDWb6NSVp0Zr1tGgNhuxI0",
     googleApiKey:       "AIzaSyAWnB_I7OITzZAyCWNQEAOQaQ1TREUUXEk",
     locationColumn:     "geometry",
     map_center:         [30.2672, -97.7431],
@@ -35,7 +35,7 @@ function showDistricts(){
 
   } else{
     myMap = new MapsLib({
-      fusionTableId:      "1CQYIqVOK-A1Ho-cYv9wl3p4XTfrJKcIOM0GehOHG",
+      fusionTableId:      "101jSo8YC3qo5qZ-AbAoDWb6NSVp0Zr1tGgNhuxI0",
       googleApiKey:       "AIzaSyAWnB_I7OITzZAyCWNQEAOQaQ1TREUUXEk",
       locationColumn:     "geometry",
       map_center:         [30.2672, -97.7431],
@@ -64,7 +64,7 @@ function showAffordableHousing(){
     document.getElementById("legend").style.display = "none";
   } else{
     myMap = new MapsLib({
-      fusionTableId:      "1CQYIqVOK-A1Ho-cYv9wl3p4XTfrJKcIOM0GehOHG",
+      fusionTableId:      "101jSo8YC3qo5qZ-AbAoDWb6NSVp0Zr1tGgNhuxI0",
       googleApiKey:       "AIzaSyAWnB_I7OITzZAyCWNQEAOQaQ1TREUUXEk",
       locationColumn:     "geometry",
       map_center:         [30.2672, -97.7431],
