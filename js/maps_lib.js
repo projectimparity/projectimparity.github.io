@@ -182,7 +182,7 @@
     MapsLib.prototype.getInfo = function (callback) {
         var self = this;
         jQuery.ajax({
-            url: 'https://www.googleapis.com/fusiontables/v1/tables/' + '1CQYIqVOK-A1Ho-cYv9wl3p4XTfrJKcIOM0GehOHG' + '?key=' + 'AIzaSyAWnB_I7OITzZAyCWNQEAOQaQ1TREUUXEk',
+            url: 'https://www.googleapis.com/fusiontables/v1/tables/' + '101jSo8YC3qo5qZ-AbAoDWb6NSVp0Zr1tGgNhuxI0' + '?key=' + 'AIzaSyBIkhAB3zXZFEOuZJA39J_in59EnuuENg8',
             dataType: 'json'
         }).done(function (response) {
             if (callback) callback(response);
