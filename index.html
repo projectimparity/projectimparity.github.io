@@ -30,7 +30,7 @@
 									            <div class="input-group" id='search_address_group'>
 									              <input class='form-control' id='search_address' placeholder='Enter an address/intersection' type='text' />
 									              <span class="input-group-btn">
-																	<a class='btn btn-primary' id='search' href='#'>
+																	<a class='btn btn-primary' id='search' href='#' onclick = "loadSearchMap()">
 										                <i class='glyphicon glyphicon-search'></i>
 										              </a>
 
@@ -72,7 +72,7 @@
 					<div id = "sideBarContent">
 						<div id = "sideBarText1Div">
 							<!--EDIT THIS TEXT-->
-							<h1 id = "sideBarText1">Your area is or is not being gentrified:</h1>
+							<h1 id = "sideBarText1">Gentrification rate:</h1>
 						</div>
 
 						<!--JUMP TO CALENDAR-->
@@ -81,11 +81,6 @@
 						<div id = "sideBarPercentDiv">
 							<!--EDIT THIS TEXT-->
 							<h1 id = "sideBarPercent">00%</h1>
-						</div>
-
-						<div id = "sideBarText2Div">
-							<!--EDIT THIS TEXT?-->
-							<h1 id = "sideBarText2">increase in medium price 2012-2017</h1>
 						</div>
 
 						<div id = "sideBarInfoDiv">
@@ -160,7 +155,7 @@
 			          <p>Please enable JavaScript to view the map.</p>
 			        </div>
 			      </noscript>
-			      <div id='map_canvas'></div>
+			      <div id='map_canvas' onclick = "showInfo()"></div>
 			      <div class='alert alert-info' id='result_box' ><strong id='result_count'></strong></div>
 
 			    </div>
