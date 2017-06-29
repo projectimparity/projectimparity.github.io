@@ -7,6 +7,14 @@ var myMap = new MapsLib({
   locationScope:      "austin"
 });
 
+var dummyMap = new MapsLib({
+  fusionTableId:      "1EHig2fLqGlw_259sUar_n8BKrn5-l5NL-oNzpNkE",
+  googleApiKey:       "AIzaSyAWnB_I7OITzZAyCWNQEAOQaQ1TREUUXEk",
+  locationColumn:     "geometry",
+  map_center:         [30.2672, -97.7431],
+  locationScope:      "austin"
+});
+
 function loadMap(){
   myMap = new MapsLib({
     fusionTableId:      "1EHig2fLqGlw_259sUar_n8BKrn5-l5NL-oNzpNkE",
@@ -145,9 +153,11 @@ $(function() {
 //SIDE BAR
 
 function showInfo(){
+    if(myMap.fusionTableId === '1EHig2fLqGlw_259sUar_n8BKrn5-l5NL-oNzpNkE'){
     setTimeout(function(){
         document.getElementById("sideBarInfoDiv").innerHTML = document.getElementsByClassName("googft-info-window")[0].innerHTML;
         document.getElementById("zipCodeDiv").innerHTML = document.getElementsByTagName("center")[0].innerHTML;
         //document.getElementById("sideBarPercentDiv").innerHTML = document.getElementsByClassName("googft-info-window")[0].innerHTML;
     }, 700);
+  }
 }
