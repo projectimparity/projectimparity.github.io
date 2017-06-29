@@ -29,12 +29,39 @@ function loadSearchMap(){
   myMap.doSearch();
 }
 
-var countDistrict = 0;
+
+function showGentrification(){
+
+  if(myMap.fusionTableId !== "1EHig2fLqGlw_259sUar_n8BKrn5-l5NL-oNzpNkE"){
+    myMap= new MapsLib({
+      fusionTableId:      "1EHig2fLqGlw_259sUar_n8BKrn5-l5NL-oNzpNkE",
+      googleApiKey:       "AIzaSyAWnB_I7OITzZAyCWNQEAOQaQ1TREUUXEk",
+      locationColumn:     "geometry",
+      map_center:         [30.2672, -97.7431],
+      locationScope:      "austin"
+    });
+    document.getElementById("mainOptionDiv").style.background = "#fced1c";
+    document.getElementById("locateOptionDiv").style.background = "white";
+    document.getElementById("callOptionDiv").style.background = "white";
+    document.getElementById("meetingOptionDiv").style.background = "white";
+  } else{
+    myMap = new MapsLib({
+      fusionTableId:      "1EHig2fLqGlw_259sUar_n8BKrn5-l5NL-oNzpNkE",
+      googleApiKey:       "AIzaSyAWnB_I7OITzZAyCWNQEAOQaQ1TREUUXEk",
+      locationColumn:     "geometry",
+      map_center:         [30.2672, -97.7431],
+      locationScope:      "austin"
+    });
+    document.getElementById("mainOptionDiv").style.background = "#fced1c";
+    document.getElementById("locateOptionDiv").style.background = "white";
+    document.getElementById("legend").style.display = "block";
+  }
+
+}
 
 function showDistricts(){
-  countDistrict++;
 
-  if(countDistrict%2 === 1){
+  if(myMap.fusionTableId !== "1o_NBmKAHnbtyUqOWsQselwKFRxmiaQ_PJmkdQdU2"){
     myMap= new MapsLib({
       fusionTableId:      "1o_NBmKAHnbtyUqOWsQselwKFRxmiaQ_PJmkdQdU2",
       googleApiKey:       "AIzaSyAWnB_I7OITzZAyCWNQEAOQaQ1TREUUXEk",
@@ -45,6 +72,7 @@ function showDistricts(){
     document.getElementById("callOptionDiv").style.background = "#fced1c";
     document.getElementById("locateOptionDiv").style.background = "white";
     document.getElementById("meetingOptionDiv").style.background = "white";
+    document.getElementById("mainOptionDiv").style.background = "white";
     document.getElementById("calendarDiv").style.display = "none";
     document.getElementById("legend").style.display = "none";
 
@@ -63,12 +91,9 @@ function showDistricts(){
 
 }
 
-var countAffordable = 0;
-
 function showAffordableHousing(){
-  countAffordable++;
 
-  if(countAffordable%2 === 1){
+  if(myMap.fusionTableId !== "1rT5PH2EnnmXf5VMdkLW5SD141MQP6tZToAZ9612Y"){
     myMap= new MapsLib({
       fusionTableId:      "1rT5PH2EnnmXf5VMdkLW5SD141MQP6tZToAZ9612Y",
       googleApiKey:       "AIzaSyAWnB_I7OITzZAyCWNQEAOQaQ1TREUUXEk",
@@ -77,6 +102,7 @@ function showAffordableHousing(){
       locationScope:      "austin"
     });
     document.getElementById("legend").style.display = "none";
+    document.getElementById("mainOptionDiv").style.background = "white";
     document.getElementById("locateOptionDiv").style.background = "#fced1c";
     document.getElementById("callOptionDiv").style.background = "white";
     document.getElementById("meetingOptionDiv").style.background = "white";
@@ -94,21 +120,16 @@ function showAffordableHousing(){
   }
 }
 
-var countCal = 0;
-
 function showCalendar(){
-  countCal++;
   var cal = document.getElementById("calendarDiv");
-  if(countCal%2 === 1){
+  if(cal.style.display !== "block"){
     cal.style.display = "block";
     document.getElementById("sideBar").style.height = "200%";
     document.getElementById("meetingOptionDiv").style.background = "#fced1c";
-    document.getElementById("locateOptionDiv").style.background = "white";
-    document.getElementById("callOptionDiv").style.background = "white";
   } else{
     cal.style.display = "none";
     document.getElementById("meetingOptionDiv").style.background = "white";
-    document.getElementById("sideBar").style.height = "auto";
+    document.getElementById("sideBar").style.height = "200%";
   }
 }
 
@@ -157,7 +178,7 @@ function showInfo(){
     setTimeout(function(){
         document.getElementById("sideBarInfoDiv").innerHTML = document.getElementsByClassName("googft-info-window")[0].innerHTML;
         document.getElementById("zipCodeDiv").innerHTML = document.getElementsByTagName("center")[0].innerHTML;
-        //document.getElementById("sideBarPercentDiv").innerHTML = document.getElementsByClassName("googft-info-window")[0].innerHTML;
+        document.getElementById("sideBarPercentDiv").innerHTML = document.getElementsByTagName("center")[1].innerHTML;
     }, 700);
   }
 }
