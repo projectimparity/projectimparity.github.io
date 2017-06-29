@@ -130,7 +130,7 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
 }
 
 #sideBarInfoDiv{
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 #sideBarInfoDiv hr{
@@ -145,6 +145,21 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
   display: none;
 }
 
+#sideBarPercentDiv b{
+  display: none;
+}
+
+#sideBarPercentDiv{
+  color: black;
+  font-size: 72px;
+  font-weight: normal;
+}
+
+#sideBarPercent{
+  color: black;
+  font-size: 72px;
+  font-weight: normal;
+}
 
 #sideBarContent{
   position: absolute;
@@ -163,16 +178,6 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
   color: black;
   font-size: 15px;
   font-weight: lighter;
-}
-
-#sideBarPercentDiv{
-
-}
-
-#sideBarPercent{
-  color: black;
-  font-size: 72px;
-  font-weight: normal;
 }
 
 #sideBarText2Div{
