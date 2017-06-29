@@ -244,7 +244,7 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
   text-decoration: none;
 }
 
-#calendarDiv{
+#calendarDiv, #housingDiv{
   background-color: white;
   width: 80%;
   height: 600px;
@@ -253,7 +253,7 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
   display: none;
 }
 
-#calendarTitleDiv{
+#calendarTitleDiv, #housingTitleDiv{
   position: absolute;
   height: 55px;
   width: 80%;
@@ -261,7 +261,7 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
   text-align: left;
 }
 
-#calendarTitle{
+#calendarTitle, #housingTitle{
   color: white;
   font-size: 20px;
   font-weight: lighter;
@@ -273,6 +273,15 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
   height: 600px;
   width: 80%;
   margin-left: -140px;
+  margin-top: 60px;
+}
+
+#housingDiv{
+  height: 200px;
+}
+
+#housingForm{
+  position: absolute;
   margin-top: 60px;
 }
 
