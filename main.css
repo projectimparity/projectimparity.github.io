@@ -103,7 +103,7 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
 
 #sideBar{
   position: absolute;
-  width: 350px;
+  width: 370px;
   height: 150%;
   background-color: white;
   bottom: 0;
@@ -131,6 +131,8 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
 
 #sideBarInfoDiv{
   margin-top: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 #sideBarInfoDiv hr{
@@ -198,14 +200,16 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
 
 #optionsBarDiv{
   width: 100%;
-  height: 100px;
+  height: 240px;
   margin-top: 50px;
+  background-color: white;
 }
 
 .options{
   display: inline-block;
-  width: 100px;
-  height: 100%;
+  width: 120px;
+  height: 50%;
+  margin: 0 15px 0 15px;
 }
 
 .options:hover{
@@ -215,7 +219,7 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
 .optionsIcon{
   height: 45px;
   width: auto;
-  padding-top: 10px;
+  margin-top: 15px;
 }
 
 .optionsText{
@@ -223,6 +227,14 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
   font-weight: bold;
   font-size: 12px;
   margin-top: 15px;
+}
+
+#mainOptionDiv{
+  background-color: #fced1c;
+}
+
+#meetingOptionDiv{
+  text-decoration: none;
 }
 
 #calendarDiv{
