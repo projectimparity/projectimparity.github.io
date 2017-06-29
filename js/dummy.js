@@ -102,6 +102,7 @@ function showAffordableHousing(){
       locationScope:      "austin"
     });
     document.getElementById("legend").style.display = "none";
+    document.getElementById("housingDiv").style.display = "block";
     document.getElementById("mainOptionDiv").style.background = "white";
     document.getElementById("locateOptionDiv").style.background = "#fced1c";
     document.getElementById("callOptionDiv").style.background = "white";
@@ -116,6 +117,7 @@ function showAffordableHousing(){
       locationScope:      "austin"
     });
     document.getElementById("locateOptionDiv").style.background = "white";
+    document.getElementById("housingDiv").style.display = "none";
     document.getElementById("legend").style.display = "block";
   }
 }
