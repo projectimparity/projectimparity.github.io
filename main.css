@@ -198,10 +198,17 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
   margin-top: 40px;
 }
 
+#optionsTitle{
+  color: black;
+  font-weight: bold;
+  font-size: 26px;
+  margin-top: 45px;
+}
+
 #optionsBarDiv{
   width: 100%;
   height: 240px;
-  margin-top: 50px;
+  margin-top: 30px;
   background-color: white;
 }
 
