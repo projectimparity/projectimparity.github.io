@@ -101,7 +101,7 @@ function showCalendar(){
   var cal = document.getElementById("calendarDiv");
   if(countCal%2 === 1){
     cal.style.display = "block";
-    document.getElementById("sideBar").style.height = "180%";
+    document.getElementById("sideBar").style.height = "200%";
     document.getElementById("meetingOptionDiv").style.background = "#fced1c";
     document.getElementById("locateOptionDiv").style.background = "white";
     document.getElementById("callOptionDiv").style.background = "white";
