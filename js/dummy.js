@@ -147,7 +147,7 @@ function showCalendar(){
   } else{
     cal.style.display = "none";
     document.getElementById("meetingOptionDiv").style.background = "white";
-    document.getElementById("sideBar").style.height = "200%";
+    document.getElementById("sideBar").style.height = "250%";
   }
 }
 
