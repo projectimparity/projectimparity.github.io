@@ -44,6 +44,7 @@ function showGentrification(){
     document.getElementById("locateOptionDiv").style.background = "white";
     document.getElementById("callOptionDiv").style.background = "white";
     document.getElementById("meetingOptionDiv").style.background = "white";
+    document.getElementById("housingDiv").style.display = "none";
   } else{
     myMap = new MapsLib({
       fusionTableId:      "1EHig2fLqGlw_259sUar_n8BKrn5-l5NL-oNzpNkE",
@@ -75,6 +76,7 @@ function showDistricts(){
     document.getElementById("mainOptionDiv").style.background = "white";
     document.getElementById("calendarDiv").style.display = "none";
     document.getElementById("legend").style.display = "none";
+    document.getElementById("housingDiv").style.display = "none";
 
   } else{
     myMap = new MapsLib({
@@ -128,6 +130,7 @@ function showCalendar(){
     cal.style.display = "block";
     document.getElementById("sideBar").style.height = "200%";
     document.getElementById("meetingOptionDiv").style.background = "#fced1c";
+    document.getElementById("housingDiv").style.display = "none";
   } else{
     cal.style.display = "none";
     document.getElementById("meetingOptionDiv").style.background = "white";
