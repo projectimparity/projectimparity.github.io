@@ -2,6 +2,113 @@
         font-family: 'Roboto', sans-serif;
 }
 
+#blur{
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  -webkit-filter: blur(7px);
+}
+
+/*INTRO*/
+#introDiv{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 9;
+}
+
+#intro1{
+  width: 600px;
+  height: 300px;
+  margin: auto;
+  margin-top: 200px;
+  background-color: #2b058b;
+  border-radius: 50px;
+}
+
+#intro1-text{
+  color: white;
+  font-weight: lighter;
+  font-size: 35px;
+  padding-left: 40px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+#intro2{
+  display: none;
+  position: fixed;
+  width: 330px;
+  height: 165px;
+  background-color: white;
+  top: 100px;
+  left: 860px;
+}
+
+#intro3{
+  display: none;
+  position: fixed;
+  width: 330px;
+  height: 165px;
+  background-color: white;
+  top: 120px;
+  left: 400px;
+}
+
+#intro4{
+  display: none;
+  position: fixed;
+  width: 330px;
+  height: 270px;
+  background-color: white;
+  top: calc(100% - 320px);
+  left: 400px;
+}
+
+.intro-text{
+  font-size: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.instructions h1{
+  color: black;
+}
+
+.instructions{
+  position: relative;
+  border-radius: 20px;
+  z-index: 12;
+}
+
+#intro-button-bar{
+  position: absolute;
+  margin-left: 40px;
+}
+
+#skip-button, #next-button{
+  position: absolute;
+  display: inline-block;
+  color: white;
+  width: 100px;
+  cursor: pointer;
+}
+
+#skip-button h1, #next-button h1{
+  font-size: 19px;
+}
+
+#skip-button{
+  text-align: left;
+}
+
+#next-button{
+  text-align: right;
+  margin-left: 150px;
+}
+
+/*MAIN*/
 #top{
         position: fixed;
         width: 100%;
