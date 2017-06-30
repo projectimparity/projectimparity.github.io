@@ -1,3 +1,13 @@
+//INTRO
+function skip(){
+  document.getElementById("blur").setAttribute("style","-webkit-filter: blur(0px)");
+  document.getElementById("introDiv").style.display = "none";
+}
+
+function next(){
+
+}
+
 //FOR MAP
 var myMap = new MapsLib({
   fusionTableId:      "1EHig2fLqGlw_259sUar_n8BKrn5-l5NL-oNzpNkE",
@@ -45,6 +55,7 @@ function showGentrification(){
     document.getElementById("callOptionDiv").style.background = "white";
     document.getElementById("meetingOptionDiv").style.background = "white";
     document.getElementById("housingDiv").style.display = "none";
+    document.getElementById("legend").style.display = "block";
   } else{
     myMap = new MapsLib({
       fusionTableId:      "1EHig2fLqGlw_259sUar_n8BKrn5-l5NL-oNzpNkE",
