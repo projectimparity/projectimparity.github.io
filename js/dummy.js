@@ -197,6 +197,6 @@ function showInfo(){
         document.getElementById("sideBarInfoDiv").innerHTML = document.getElementsByClassName("googft-info-window")[0].innerHTML;
         document.getElementById("zipCodeDiv").innerHTML = document.getElementsByTagName("center")[0].innerHTML;
         document.getElementById("sideBarPercentDiv").innerHTML = document.getElementsByTagName("center")[1].innerHTML;
-    }, 700);
+    }, 1000);
   }
 }
