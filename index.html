@@ -12,6 +12,64 @@
 </head>
 
 <body onload = "loadMap()">
+
+				<div class = "instructions" id = "intro1">
+					<h1 id = "intro1-text">Welcome to Project Imparity.</h1>
+					<div id = "intro-button-bar">
+						<div onclick = "skip(0)" id = "skip-button">
+							<h1 style = "color: white">SKIP</h1>
+						</div>
+						<div onclick = "next(0)" id = "next-button">
+							<h1 style = "color: white">NEXT</h1>
+						</div>
+					</div>
+				</div>
+
+				<div id = "intro2" class = "instructions">
+					<h1 class = "intro-text" id = "intro2-text">1. Type in your address and hit the search button</h1>
+					<div id = "intro-button-bar">
+						<div onclick = "skip(1)" id = "skip-button">
+							<h1>SKIP</h1>
+						</div>
+						<div onclick = "next(1)" id = "next-button">
+							<h1>NEXT</h1>
+						</div>
+					</div>
+				</div>
+
+				<div id = "intro3" class = "instructions">
+					<h1 class = "intro-text" id = "intro3-text">2. Click on the map to view gentrification data</h1>
+					<div id = "intro-button-bar">
+						<div onclick = "skip(2)" id = "skip-button">
+							<h1>SKIP</h1>
+						</div>
+						<div onclick = "next(2)" id = "next-button">
+							<h1>NEXT</h1>
+						</div>
+					</div>
+				</div>
+
+				<div id = "intro4" class = "instructions">
+					<h1 class = "intro-text" id = "intro3-text">
+						3. Explore the options below. You can:
+						<ul>
+							<li>Locate nearby affordable housing</li>
+							<li>See city districts and contact a representative</li>
+							<li>View city hall meetings</li>
+						</ul>
+					</h1>
+					<div id = "intro-button-bar">
+						<div onclick = "skip(3)" id = "skip-button">
+							<h1>SKIP</h1>
+						</div>
+						<div onclick = "skip(3)" id = "next-button">
+							<h1>FINISH</h1>
+						</div>
+					</div>
+				</div>
+
+
+			<div id = "blur">
         <div id = "top">
                 <!--Menu for now-->
                 <div id = "topLogoDiv">
@@ -190,6 +248,6 @@
 			    </script>
 </div>
 
-
+</div>
 </body>
 </html>
