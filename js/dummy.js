@@ -1,11 +1,13 @@
 //INTRO
-function skip(){
+function skip(position){
   document.getElementById("blur").setAttribute("style","-webkit-filter: blur(0px)");
-  document.getElementById("introDiv").style.display = "none";
+  document.getElementsByClassName("instructions")[position].style.display = "none";
 }
 
-function next(){
-
+function next(position){
+  document.getElementsByClassName("instructions")[position].style.display = "none";
+  document.getElementById("blur").setAttribute("style","-webkit-filter: blur(0px)");
+  document.getElementsByClassName("instructions")[position + 1].style.display = "block";
 }
 
 //FOR MAP
