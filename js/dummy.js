@@ -116,10 +116,11 @@ function showAffordableHousing(){
       map_center:         [30.2672, -97.7431],
       locationScope:      "austin"
     });
+
+    document.getElementById("locateOptionDiv").style.background = "#fced1c";
     document.getElementById("legend").style.display = "none";
     document.getElementById("housingDiv").style.display = "block";
     document.getElementById("mainOptionDiv").style.background = "white";
-    document.getElementById("locateOptionDiv").style.background = "#fced1c";
     document.getElementById("callOptionDiv").style.background = "white";
     document.getElementById("meetingOptionDiv").style.background = "white";
     document.getElementById("calendarDiv").style.display = "none";
@@ -141,13 +142,14 @@ function showCalendar(){
   var cal = document.getElementById("calendarDiv");
   if(cal.style.display !== "block"){
     cal.style.display = "block";
-    document.getElementById("sideBar").style.height = "200%";
+    document.getElementById("sideBar").style.height = "250%";
     document.getElementById("meetingOptionDiv").style.background = "#fced1c";
     document.getElementById("housingDiv").style.display = "none";
+    document.getElementById("locateOptionDiv").style.background = "white";
   } else{
     cal.style.display = "none";
     document.getElementById("meetingOptionDiv").style.background = "white";
-    document.getElementById("sideBar").style.height = "250%";
+    document.getElementById("sideBar").style.height = "200%";
   }
 }
 
