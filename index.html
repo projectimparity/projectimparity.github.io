@@ -104,10 +104,7 @@
 									              </span>
 									            </div>
 									          </div>
-
-
 									        </form>
-
                 </div>
         </div>
 
@@ -127,6 +124,7 @@
 
 						<!--JUMP TO CALENDAR-->
 						<a name = "calendarJump"></a>
+						<a name = "housingJump"></a>
 
 						<div id = "sideBarPercentDiv">
 							<!--EDIT THIS TEXT-->
@@ -138,7 +136,11 @@
 
 						<div id = "sidebarHR"></div>
 
+						<!--OPTIONS-->
 						<h1 id = "optionsTitle">Options:</h1>
+
+						<!--JUMP TO HOUSING-->
+						<a name = "housingJump"></a>
 
 						<div id = "optionsBarDiv">
 							<div id = "mainOptionDiv" class = "options" onclick = "showGentrification()">
@@ -146,10 +148,10 @@
 								<h1 class = "optionsText">GENTRIFICATION PERCENTAGE MAP</h1>
 							</div>
 
-							<div id = "locateOptionDiv" class = "options" onclick = "showAffordableHousing()">
+							<a id = "locateOptionDiv" class = "options" href = "#housingJump"><div onclick = "showAffordableHousing()">
 								<img src = "images/house.png" class = "optionsIcon"/>
 								<h1 class = "optionsText">FIND AFFORDABLE HOUSING</h1>
-							</div>
+							</div></a>
 
 							<div id = "callOptionDiv" class = "options" onclick = "showDistricts()">
 								<img src = "images/call.png" class = "optionsIcon"/>
