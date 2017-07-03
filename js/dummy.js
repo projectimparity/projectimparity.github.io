@@ -124,6 +124,7 @@ function showAffordableHousing(){
     document.getElementById("callOptionDiv").style.background = "white";
     document.getElementById("meetingOptionDiv").style.background = "white";
     document.getElementById("calendarDiv").style.display = "none";
+    document.getElementById("sideBar").style.height = "200%";
   } else{
     myMap = new MapsLib({
       fusionTableId:      "1EHig2fLqGlw_259sUar_n8BKrn5-l5NL-oNzpNkE",
