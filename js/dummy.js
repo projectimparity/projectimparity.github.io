@@ -108,9 +108,9 @@ function showDistricts(){
 
 function showAffordableHousing(){
 
-  if(myMap.fusionTableId !== "1yiKXnnr_WQ0az15S6Q1HIBMSzhrx8lcpZS3wu127"){
+  if(myMap.fusionTableId !== "1lKb9R5voQO7geXSokjiFA2LGYimbySjVVVR77VXx"){
     myMap= new MapsLib({
-      fusionTableId:      "1yiKXnnr_WQ0az15S6Q1HIBMSzhrx8lcpZS3wu127",
+      fusionTableId:      "1lKb9R5voQO7geXSokjiFA2LGYimbySjVVVR77VXx",
       googleApiKey:       "AIzaSyAWnB_I7OITzZAyCWNQEAOQaQ1TREUUXEk",
       locationColumn:     "geometry",
       map_center:         [30.2672, -97.7431],
